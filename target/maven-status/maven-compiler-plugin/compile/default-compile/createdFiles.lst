@@ -1,0 +1,16 @@
+com/mycompany/routes/HttpRoutBuilder.class
+com/mycompany/routes/SimpleRestRouteBuilder.class
+com/mycompany/routes/BeanValidationRoutBuilder.class
+com/mycompany/routes/ExceptionRoutBuilder$1.class
+com/mycompany/beans/Student.class
+com/mycompany/routes/TimerRoutBuilder.class
+com/mycompany/beans/HelloWorldBean.class
+com/mycompany/routes/ExceptionRoutBuilder$3.class
+com/mycompany/processor/ThrowCamelCustomExceptionProcessor.class
+com/mycompany/beans/CustomerService.class
+com/mycompany/routes/SayHelloRoutBuilder.class
+com/mycompany/exception/CamelCustomException.class
+com/mycompany/beans/CountBean.class
+com/mycompany/routes/ExceptionRoutBuilder.class
+com/mycompany/run/MainApp.class
+com/mycompany/routes/ExceptionRoutBuilder$2.class
