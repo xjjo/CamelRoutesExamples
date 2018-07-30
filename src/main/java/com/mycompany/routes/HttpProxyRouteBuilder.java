@@ -7,7 +7,7 @@ public class HttpProxyRouteBuilder extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		from("jetty:http://0.0.0.0:8080/inventory?matchOnUriPrefix=true")
-		 .streamCaching()
+		.streamCaching()
 		.log(">>> ${body}")
 		.to("jetty:http://localhost:8088/inventory?bridgeEndpoint=true&amp;throwExceptionOnFailure=false");//deprecated?
 
@@ -27,5 +27,7 @@ public class HttpProxyRouteBuilder extends RouteBuilder {
   
   The producer is deprecated - do not use. We only recommend using jetty as consumer (eg from jetty)
  
+   !  consumer ---> route ---> producer  !
+   -----<<-------------<-----------<------
  
  */

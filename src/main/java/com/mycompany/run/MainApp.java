@@ -8,6 +8,7 @@ import com.mycompany.routes.DirectVmToRoutBuilder;
 import com.mycompany.routes.ExceptionRoutBuilder;
 import com.mycompany.routes.HttpProxyRouteBuilder;
 import com.mycompany.routes.HttpRoutBuilder;
+import com.mycompany.routes.RecipientListRoutBuilder;
 import com.mycompany.routes.SedaRoutBuilder;
 
 /**
@@ -30,8 +31,8 @@ public class MainApp {
         //main.addRouteBuilder( new HttpRoutBuilder() );//http component - llamamos a un servicio soap
         //main.addRouteBuilder( new DirectVmToRoutBuilder() ); // igual que direct component pero pueden estar en distintos contextos en una misma jvm
         //main.addRouteBuilder(new SedaRoutBuilder()); // SEDA component allows to join routes together using a simple in memory queue.
-        main.addRouteBuilder(new HttpProxyRouteBuilder());
-        
+        //main.addRouteBuilder(new HttpProxyRouteBuilder());
+        main.addRouteBuilder(new RecipientListRoutBuilder());
         main.run(args);
     }
 
