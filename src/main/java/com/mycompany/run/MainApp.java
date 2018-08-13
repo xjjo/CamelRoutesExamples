@@ -10,6 +10,7 @@ import com.mycompany.routes.HttpProxyRouteBuilder;
 import com.mycompany.routes.HttpRoutBuilder;
 import com.mycompany.routes.RecipientListRoutBuilder;
 import com.mycompany.routes.SedaRoutBuilder;
+import com.mycompany.routes.XTestRoutBuilder;
 
 /**
  * A Camel Application
@@ -24,7 +25,7 @@ public class MainApp {
         //main.addRouteBuilder(new SimpleRestRouteBuilder());
         //main.addRouteBuilder(new TimerRoutBuilder()); //Retornando valores desde un Bean
         //main.addRouteBuilder(new SayHelloRoutBuilder());//Retornando valores desde un Bean
-        //main.addRouteBuilder(new SayHelloRoutBuilder());
+
         //main.addRouteBuilder(new BeanValidationRoutBuilder()); // entrada de datos file:json - ¡como capturamos y manejamos las excepciones????
         //main.addRouteBuilder(new ExceptionRoutBuilder());//manejando excepciones y flujos
         //main.addRouteBuilder( new DirectRoutBuilder() );// Direct component y seteo de un string en el body 
@@ -32,7 +33,9 @@ public class MainApp {
         //main.addRouteBuilder( new DirectVmToRoutBuilder() ); // igual que direct component pero pueden estar en distintos contextos en una misma jvm
         //main.addRouteBuilder(new SedaRoutBuilder()); // SEDA component allows to join routes together using a simple in memory queue.
         //main.addRouteBuilder(new HttpProxyRouteBuilder());
-        main.addRouteBuilder(new RecipientListRoutBuilder());
+       // main.addRouteBuilder(new RecipientListRoutBuilder());
+        main.addRouteBuilder(new XTestRoutBuilder());
+        
         main.run(args);
     }
 
